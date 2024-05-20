@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/miniProject')
+mongoose.connect('mongodb+srv://miniproject:mini123@cluster0.sx7icoc.mongodb.net/')
 
 const UserSchema = mongoose.Schema({
     username:String,

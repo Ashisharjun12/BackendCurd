@@ -42,7 +42,7 @@ app.post("/register", async (req, res) => {
 
       const token = jwt.sign({ email, userId: user._id }, "secret");
       res.cookie("token", token);
-      res.redirect("/login");
+      res.redirect("/profile");
     });
   });
 });
@@ -154,4 +154,9 @@ function isLoggedIn(req, res, next) {
 
 app.listen(3000, function () {
   console.log(`server is running at : ${3000}`);
+
+
 });
+
+
+
